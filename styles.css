@@ -1200,15 +1200,10 @@ ol {
 
 
 .contact-grid {
-    display: grid;
-    gap: var(--space-3xl);
-}
-
-@media (min-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr 1.2fr;
-        align-items: start;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .contact-intro {
@@ -1216,6 +1211,13 @@ ol {
     color: var(--text-secondary);
     margin-bottom: var(--space-xl);
     line-height: 1.7;
+    text-align: center;
+}
+
+.contact-info {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .contact-details {
@@ -1225,6 +1227,7 @@ ol {
 .contact-item {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: var(--space-md);
     padding: var(--space-md) 0;
     color: var(--text-secondary);
@@ -1241,6 +1244,7 @@ a.contact-item:hover {
 
 .contact-social {
     display: flex;
+    justify-content: center;
     gap: var(--space-md);
 }
 
